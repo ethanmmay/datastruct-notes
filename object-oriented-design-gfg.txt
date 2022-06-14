@@ -1,0 +1,55 @@
+https://www.geeksforgeeks.org/oops-object-oriented-design/
+
+
+Machine language coding was near impossible for modern programs so assembly languages were born
+
+Assembly languages were too open and had no structure so Structured Programming was born
+
+Structured Programming: Divide program into functions and modules, helps keep program readable and modular, PASCAL and C follow this approach
+
+Procedural Programming Approach: AKA Top-down approach, functions have specific tasks, data is global, not secure, FORTRAN and COBOL follow this approach
+
+Procedural programming had issues with over-generalization and real-time applications so the Object-oriented Programming approach was born
+
+Object-Oriented Programming Approach: Modeled state and behaviour after real-world objects, simplifying programming and increasing modularity ten-fold
+
+Classes & Objects: Basic concept of OOP, abstract and user-defined data type, class stores data and becomes blueprint for the object while being invisible, only showing the object created
+
+Data Abstraction: Simplification of logical view while hiding background details/explanation. 
+Physical level: Storage and format of data, 
+Logical level: Data description, data relationships, manipulation of data (where the programmer works), 
+View Level: the generated interactable of the program, usually the GUI or CLI.
+
+Encapsulation: Wrapping methods and their necessary data within classes to create modules for specific tasks
+
+Levels of encapsulation: high - only variables and function calls (ex: Controller or StepDefinition), medium - function calls, variables and minor data manipulation (ex: method with a larger function that calls a function for a small piece of data), low - variables, mostly data retrieval and manipulation (ex: PageObjects, Services, Utilities)
+
+Inheritance: Passing down properties from parent class to reuse code and extend functionality. 
+
+Types of inheritance: Single (1 parent, 1 child), Multiple (2+ parents, 1 child), Multilevel (Parent, derived, 2nd gen derived), Hierarchical (1 parent, 3+ children), Hybrid (1 parent > 2 derived > 2nd gen derived from 2 derived)
+
+Polymorphism: The idea of a multi-purpose function that processes data in more than one form, tasks in various ways and can use method overloading and overriding to achieve multiple goals at once
+
+Types of Polymorphism: Compile Time (Function overloading and Operator overloading), Run Time (Virtual Function)
+
+Object-Oriented Programming Summary
+
+1. OOP treats data as a critical element. 
+2. Emphasis is on data rather than procedure. 
+3. Decomposition of the problem into simpler modules. 
+4. Doesn’t allow data to freely flow in the entire system, ie localized control flow. 
+5. Data is protected from external functions. 
+
+Pros
+
+1. It models the real world very well. 
+2. With OOP, programs are easy to understand and maintain. 3. OOP offers code reusability. Already created classes can be reused without having to write them again. 
+4. OOP facilitates the quick development of programs where parallel development of classes is possible. 
+5. With OOP, programs are easier to test, manage and debug. 
+
+Cons
+
+1. With OOP, classes sometimes tend to be over-generalized. 
+2. The relations among classes become superficial at times. 
+3. The OOP design is tricky and requires appropriate knowledge. Also, one needs to do proper planning and design for OOP programming. 
+4. To program with OOP, the programmer needs proper skills such as design, programming, and thinking in terms of objects and classes, etc. 
