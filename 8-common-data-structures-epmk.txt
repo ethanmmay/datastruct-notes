@@ -1,0 +1,47 @@
+Array
+	- Fixed Size
+	- Same data type
+	- Array Matrices 
+	
+	~ Operations:
+			- Traverse
+			- Search
+			- Update
+			
+
+Linked Lists
+	-  Key1 - Node2 -Node2 -Tail2
+	- Node: Key and Next
+	- Singly Linked: Forward traverse only
+	- Doubly Linked: Forward+Backward & Node has 'prev'
+	- Circular Linked: head's prev points to tail and vv
+	
+	~ Operations:
+			- Search
+			- Insert
+			- Delete
+			
+
+Stacks (LIFO)
+	- Used for evaluating expressions (Algebra)
+	- Used to implement function calls in recursion
+	
+	~ Operations:
+			- Push
+			- Pop
+			- Peek
+			- isEmpty
+			- isFull
+			
+
+Queues (FIFO)
+	- Used to manage threads in multithreading
+	- Used for priority queues
+	
+	~ Operations:
+		- Enqueue
+		- Dequeue
+		
+		
+
+	
