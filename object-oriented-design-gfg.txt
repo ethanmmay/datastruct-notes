@@ -22,7 +22,7 @@ View Level: the generated interactable of the program, usually the GUI or CLI.
 
 Encapsulation: Wrapping methods and their necessary data within classes to create modules for specific tasks
 
-Levels of encapsulation: high - only variables and function calls (ex: Controller or StepDefinition), medium - function calls, variables and minor data manipulation (ex: method with a larger function that calls a function for a small piece of data), low - variables, mostly data retrieval and manipulation (ex: PageObjects, Services, Utilities)
+Levels of encapsulation: high - only variables and function calls (ex: Controller, Feature), medium - function calls, variables and minor data manipulation (ex: StepDefinitions), low - variables, mostly data retrieval and manipulation (ex: PageObjects, Services, Utilities)
 
 Inheritance: Passing down properties from parent class to reuse code and extend functionality. 
 
