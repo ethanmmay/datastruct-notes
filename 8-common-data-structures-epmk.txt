@@ -10,7 +10,7 @@ Array
 			
 
 Linked Lists
-	-  Key1 - Node2 -Node2 -Tail2
+	- Key1 - Node2 - Node2 - Tail2
 	- Node: Key and Next
 	- Singly Linked: Forward traverse only
 	- Doubly Linked: Forward+Backward & Node has 'prev'
@@ -43,5 +43,39 @@ Queues (FIFO)
 		- Dequeue
 		
 		
+Hash Tables
+	- Used when Direct Addressing is outscaled
+	- h(key) = key % table_size (h(63) = 63 % 20 = 3)
+	- Used for database indices and associative arrays
+	- Used for developing the "set" data structure
+	
+	~ Operations:
+		- Insert
+		- Search
+		
 
+Trees
+	- Ex: Binary Search (BST), B tree, Treap, Red-Black Tree, Splay, AVL and N-ary tree.
+	- BST Hierarchical structure: key, left, right, p (parent)
+	- Used when data is coming and going, like expression parsers and solvers
+	- Heaps are used by JVM to store Java objects
+	- Treaps are used in wireless networking
+	
+
+Heaps
+	- Special Binary Tree: can be arranged based on node values
+	- Min and Max heap properties for size sorting
+	- Used for the heapsort algorithm
+	- Used for priority queues in array form
+	- Used for queue functions within O(log n) time
+	- Used to find the kth smallest or largest value
+	
+
+Graphs
+	- Vertices (points) and edges (lines) make up order (# of vertices) and size (# of edges)
+	- Adjacent nodes are two vertices connected by same edge
+	- Directed: All edges direct away from start vertex and towards end vertex. Self-loops is an edge pointing from and towards itself
+	- Undirected: No specific edge direction, isolated vertices
+	- Used for representing social media networks
+	- Used for page documentation in search engines
 	
