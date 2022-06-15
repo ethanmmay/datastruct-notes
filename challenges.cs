@@ -49,25 +49,30 @@ namespace Challenges {
             // Split number into individual digits
             // Factorial each digit and find the sum
             // Compare sum to original number and add to Array if equal
-            int totalSum = 0;
+            
             for (int i = 3; i < 1000000; i++)
             {
                 string num = i.ToString();
+                int totalSum = 0;
                 for (int j = 0; j < num.Length; j++) // For each letter in num
                 {
                     int currentNum = Convert.ToInt32(Char.GetNumericValue(num[j]));
-                    int currentNumsSum = currentNum;
-                    for (int k = currentNum - 1; k > 0; k--)
+                    int sumOfCurrentNum = 3; // This is 3 to account for factorials of 1 and 2
+                    // Factorialize currentNum and add it to sumOfCurrentNum
+                    int factorial = currentNum;
+                    for (int k = currentNum -1; k >= 1; k--)
                     {
-                        currentNumsSum *= k;
-
+                        factorial = factorial * k;
                     }
-                    if (num == currentNumsSum.ToString()) {
-                        Console.WriteLine(num);
-                    }
+                    totalSum = totalSum + factorial;
                 }
+                if (totalSum.ToString() == num) {
+                    Console.WriteLine(totalSum.ToString() + " is the same as the sum as its factorials");
+                } else {
+                    // Console.WriteLine(num + " is not the same as its factorials");
+                }
+                
             }
-            Console.WriteLine(totalSum);
         }
     }
 }
