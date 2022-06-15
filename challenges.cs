@@ -49,30 +49,42 @@ namespace Challenges {
             // Split number into individual digits
             // Factorial each digit and find the sum
             // Compare sum to original number and add to Array if equal
-            
-            for (int i = 3; i < 1000000; i++)
+            string[] numsThatFitRule = new string[20];
+            int spotOnRuleNumsArray = 0;
+            for (int i = 3; i < 50000; i++)
             {
                 string num = i.ToString();
                 int totalSum = 0;
                 for (int j = 0; j < num.Length; j++) // For each letter in num
                 {
                     int currentNum = Convert.ToInt32(Char.GetNumericValue(num[j]));
-                    int sumOfCurrentNum = 3; // This is 3 to account for factorials of 1 and 2
-                    // Factorialize currentNum and add it to sumOfCurrentNum
-                    int factorial = currentNum;
-                    for (int k = currentNum -1; k >= 1; k--)
+                    if (currentNum != 0)
                     {
-                        factorial = factorial * k;
+                        // Factorialize currentNum and add it to sumOfCurrentNum
+                        int factorial = currentNum;
+                        for (int k = currentNum - 1; k >= 1; k--)
+                        {
+                            factorial = factorial * k;
+                        }
+                        totalSum = totalSum + factorial;
+                    } else
+                    {
+                        totalSum++;
                     }
-                    totalSum = totalSum + factorial;
                 }
-                if (totalSum.ToString() == num) {
+                if (totalSum.ToString() == num)
+                {
                     Console.WriteLine(totalSum.ToString() + " is the same as the sum as its factorials");
-                } else {
-                    // Console.WriteLine(num + " is not the same as its factorials");
+                    numsThatFitRule[spotOnRuleNumsArray] = num;
+                    spotOnRuleNumsArray++;
                 }
-                
             }
+            int finalSum = 0;
+            foreach (string nums in numsThatFitRule)
+            {
+                finalSum = finalSum + Convert.ToInt32(nums);
+            }
+            Console.WriteLine(finalSum.ToString() + " is the final solution for Euler Problem 34");
         }
     }
 }
