@@ -1,0 +1,48 @@
+Types of Automation Testing:
+	- UI Tests
+	- Performance Tests
+	- Regression Tests
+	- Integration Tests
+	- Unit Tests
+	
+When to automate a test:
+	- Test is repeatable
+	- Tested feature doesn't change behaviour frequently
+	- Time-consuming for manual testing
+	- Test involved complicated calculations
+	- Test ensures features didn't break
+	
+- UI testing is often best done manually
+
+Software Testing Tools
+	- Some are code-less
+	- Commerical tools are expensive but have support
+	- Open Source tools are free but little to no support
+	- Some tools are more complex for more complex testing
+	- Ex: Selenium, Katalon Studio, UFT, TestComplete, Testim
+
+- Testing frameworks can help build test data for tests
+- Testing libraries can optimize tests and save writing time
+- A good framework supports unit tests, integration tests and end-to-end tests
+- Other tools can help easily repeat tests under high loads
+- Test beds are the test data sets used to help verify cases
+- Browser testing (drivers) is also done by Protractor
+- Cross-browser testing can be done over different browsers and Operating Systems using SeleniumBox, BrowserStack, Browsershots and LambdaTest
+- Regression tests are key to building a consistent user-base
+
+Automation Testing Best Practices
+	- Be smart about what you decide to automate
+	- Organize test cases based on skill and experience
+	- Remove uncertainty by triple checking tests for 0 bugs or false positives
+	- Confirm that the tool you're using will save more time than it takes to learn
+	- Use tools to record tests into a database
+	- Document new bugs in a tracking tool with exact reproduction steps and other details about the bug
+	- Try to adhere to the Test Automation Pyramid
+
+Test Automation Pyramid
+	- Have more Unit tests as they're cheaper and faster
+	- Service tests can bridge the gap between Unit and UI
+	- UI testing is important but fragile, slow and expensive. It can break with new features or updates
+	- Mike Cohn created the concept of a test pyramid for his book "Succeeding with Agile" in 2009
+	- Martin Fowler simplified the idea in 2012, replacing the integration scale with a cost scale
+	
