@@ -45,4 +45,47 @@ Test Automation Pyramid
 	- UI testing is important but fragile, slow and expensive. It can break with new features or updates
 	- Mike Cohn created the concept of a test pyramid for his book "Succeeding with Agile" in 2009
 	- Martin Fowler simplified the idea in 2012, replacing the integration scale with a cost scale
+
+More Test Automation Platforms
+	- Cucumber: Open-source, BDD, plain language (readable)
+	- Robot Framework: Open-source, Robotic Process Automation
 	
+Robot Framework
+	- Tries to simulate real human webpage interaction more
+	- Understands (to an extent) what is on screen
+	- Written in Python, Modular and uses a framework-specific syntax for test data
+	- Runs test from CLI but can generate detailed XML/HTML reports
+	- Good support for ArchiveLibrary, HttpRequestLibrary etc.
+	- Static, Dynamic and Hybrid APIs
+
+Automate a Basic Login
+	- Test it manually to understand functionality
+	- Prepare test bed with username and passwords
+	- Develop test cases and note outputs for each
+	- Record instances where output doesnt match expectations
+	- Verify and validate outputs and redirects
+	
+Risks of Automated Testing
+	- Negative ROI: Bad investments into learning new tools/frameworks can lose more time than it would save.
+	- Tech Catchup: Tools/frameworks are constantly evolving and the deprecations may throw off a sprint
+	- Maintenance Risk: Updates to features with already built tests may cause errors that need to be addressed in order to keep using the test case
+	
+Automation Testing Lifecycle
+	- Discover scope of automated tests
+	- Choose correct tools/frameworks
+	- Design test plan & execution strategy
+	- Set up test environment
+	- Develop and execute test cases
+	- Generate and analyze test reports
+
+Automating Around Captcha
+	- Captcha blocks bots from accessing parts of a site
+	- Testing drivers are technically bots so it's important to build a hidden backdoor around the captcha
+	- Remove backdoor before Production
+	- If backdoor can't be built, testing cannot bypass captcha
+	
+Writing Tests Development Practices
+	- Confirm tests can fail as a never-failing test is more harmful than helpful
+	- Don't Repeat Yourself (DRY): avoid code duplication and utilize encapsulation in tests
+	- Keep functions small to increase maintainability
+	- Document well for new team members and future self
